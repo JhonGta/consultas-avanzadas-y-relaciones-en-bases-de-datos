@@ -2,11 +2,12 @@
 
 # Consultas Avanzadas con MongoDB, Mongoose y Docker
 
+
 ## Portada
 **Título del proyecto:** Consultas Avanzadas con MongoDB, Mongoose y Docker  
-**Nombre:** [Tu Nombre Completo]  
-**Carrera / Curso:** [Tu Carrera o Materia]  
-**Fecha de entrega:** [Fecha]
+**Nombre:** Jhon Guamán  
+**Carrera / Curso:** Ingeniería en Tecnologías de la Información  
+**Fecha de entrega:** 01/07/2025
 
 ---
 
@@ -90,9 +91,52 @@ Se implementaron consultas básicas y avanzadas en el archivo `consultas.js`:
 ---
 
 
+
 ## Capturas de Pantalla
-![Descripción de la imagen](https://i.imgur.com/q3uvpSE.png)
-*Descripción: (aquí puedes poner la descripción de la imagen, por ejemplo: "Consulta avanzada ejecutada en Mongo Express mostrando los equipos disponibles.")*
+
+**Figura 1.**
+![Campos vacíos en consultas.js](https://i.imgur.com/IkoIKiI.png)
+*Descripción: Ejecución de `node consultas.js` mostrando que las colecciones están vacías antes de poblar la base de datos.*
+
+**Figura 2.**
+![Poblando la base de datos](https://i.imgur.com/woQQQDM.png)
+*Descripción: Ejecución de `node poblar.js` donde se insertan los datos de ejemplo correctamente en MongoDB.*
+
+**Figura 3.**
+![Mongo Express - Vista general de la base de datos](https://i.imgur.com/q3uvpSE.png)
+*Descripción: Vista general de la base de datos `consultas_avanzadas` y sus colecciones en Mongo Express.*
+
+**Figura 4.**
+![Mongo Express - Colección equipos](https://i.imgur.com/DQBOHQB.png)
+*Descripción: Visualización de la colección `equipos` en Mongo Express mostrando los campos `_id`, `nombre`, `estado`, `laboratorio`, `__v`.*
+
+**Figura 5.**
+![Mongo Express - Colección laboratorios](https://i.imgur.com/InNFEv3.png)
+*Descripción: Visualización de la colección `laboratorios` en Mongo Express.*
+
+**Figura 6.**
+![Mongo Express - Colección usuarios](https://i.imgur.com/Dow05kl.png)
+*Descripción: Visualización de la colección `usuarios` en Mongo Express.*
+
+**Figura 7.**
+![Ejecución de consultas.js - Resultados generales](https://i.imgur.com/0nClHu3.png)
+*Descripción: Ejecución de `node consultas.js` mostrando los resultados de todas las consultas implementadas.*
+
+**Figura 8.**
+![Consulta individual - Usuarios](https://i.imgur.com/6Nnuej2.png)
+*Descripción: Resultado de la consulta que lista todos los usuarios insertados en la base de datos.*
+
+**Figura 9.**
+![Consulta individual - Equipos disponibles y su laboratorio](https://i.imgur.com/etct5Zi.png)
+*Descripción: Resultado de la consulta que muestra los equipos disponibles junto con los datos de su laboratorio usando `.populate()`.*
+
+**Figura 10.**
+![Consulta individual - Cantidad de equipos y usuarios con correo universidad](https://i.imgur.com/7AteClu.png)
+*Descripción: Resultado de la consulta que muestra la cantidad de equipos disponibles, los usuarios con correo @universidad.edu y el promedio de equipos por laboratorio.*
+
+**Figura 11.**
+![Consulta individual - Equipos con datos de laboratorio](https://i.imgur.com/MhjfV9L.png)
+*Descripción: Resultado de la consulta que muestra todos los equipos junto con los datos completos de su laboratorio usando `.populate()`.*
 
 ---
 
