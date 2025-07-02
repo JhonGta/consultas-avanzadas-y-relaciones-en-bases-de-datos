@@ -122,21 +122,25 @@ Se implementaron consultas básicas y avanzadas en el archivo `consultas.js`:
 ![Ejecución de consultas.js - Resultados generales](https://i.imgur.com/0nClHu3.png)
 *Descripción: Ejecución de `node consultas.js` mostrando los resultados de todas las consultas implementadas.*
 
+
 **Figura 8.**
 ![Consulta individual - Usuarios](https://i.imgur.com/6Nnuej2.png)
-*Descripción: Resultado de la consulta que lista todos los usuarios insertados en la base de datos.*
+*Descripción: Resultado de la consulta que lista todos los usuarios insertados en la base de datos. Se observa el arreglo de objetos con los campos `_id`, `nombre`, `correo` y `__v`, lo que permite verificar que los datos fueron correctamente almacenados y recuperados.*
+
 
 **Figura 9.**
 ![Consulta individual - Equipos disponibles y su laboratorio](https://i.imgur.com/etct5Zi.png)
-*Descripción: Resultado de la consulta que muestra los equipos disponibles junto con los datos de su laboratorio usando `.populate()`.*
+*Descripción: Resultado de la consulta que muestra los equipos disponibles junto con los datos de su laboratorio usando `.populate()`. Se visualiza cómo cada equipo incluye un subdocumento con la información completa del laboratorio al que pertenece, demostrando la relación uno a muchos y el uso correcto de referencias en Mongoose.*
+
 
 **Figura 10.**
 ![Consulta individual - Cantidad de equipos y usuarios con correo universidad](https://i.imgur.com/7AteClu.png)
-*Descripción: Resultado de la consulta que muestra la cantidad de equipos disponibles, los usuarios con correo @universidad.edu y el promedio de equipos por laboratorio.*
+*Descripción: Resultado de la consulta que muestra la cantidad de equipos disponibles, los usuarios cuyo correo termina en @universidad.edu y el promedio de equipos por laboratorio. Se evidencia el uso de operadores como `$regex` y de agregaciones para obtener estadísticas relevantes de la base de datos.*
+
 
 **Figura 11.**
 ![Consulta individual - Equipos con datos de laboratorio](https://i.imgur.com/MhjfV9L.png)
-*Descripción: Resultado de la consulta que muestra todos los equipos junto con los datos completos de su laboratorio usando `.populate()`.*
+*Descripción: Resultado de la consulta que muestra todos los equipos junto con los datos completos de su laboratorio usando `.populate()`. Se puede observar cómo se integran los datos de ambas colecciones, facilitando la consulta y presentación de información relacionada en una sola estructura.*
 
 ---
 
